@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/pageLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="20dp"
+	tools:context="com.sriyanksiddhartha.sharedpreferences.MainActivity">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Save / Retrieve Object Type"
+		android:textColor="#969494"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:onClick="saveObjectType"
+			android:text="SAVE"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="loadObjectType"
+			android:text="LOAD"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="Save / Retrieve Generic Type"
+		android:textColor="#969494"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:onClick="saveGenericType"
+			android:text="SAVE"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="loadGenericType"
+			android:text="LOAD"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/txvDisplay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="40dp"
+		android:text="DISPLAY DATA"
+		android:textColor="#969494"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+
+</LinearLayout>
