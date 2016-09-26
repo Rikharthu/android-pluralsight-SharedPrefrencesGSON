@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 		// convert Employee object to json string
 		String jsonStr = gson.toJson(employee, Employee.class);
 		Log.i(TAG + " SAVE", jsonStr);
+		// {"name":"Sriyank Siddhartha","profId":287,"profession":"Android Developer","roles":["Developer","Admin"]}
 
 		// put json string into preference
 		prefsEditor.putString("employee_key", jsonStr);
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 		Type type = new TypeToken<Foo<Employee>>() {}.getType();
 		String jsonStr = gson.toJson(foo, type);
 		Log.i(TAG  + " SAVE", jsonStr);
+		// {"object":{"name":"Sriyank Siddhartha","profId":287,"profession":"Android Developer","roles":["Developer","Admin"]}}
 
 		prefsEditor.putString("foo_key", jsonStr);
 		prefsEditor.apply();
